@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css display inline border</title>
+    <style>
+        body{
+            font-size: 30px;
+        }
+        div{
+            border: 2px solid blue;
+            /* display:none; */
+            width:500px;
+            height:300px;
+
+        }
+        span{
+            /* border: 3px dashed red; */
+            border-width: 3px;
+            border-style: dashed;
+            border-color:orangered;
+            width:500px;
+            height:300px;
+            
+            /* display: block; */
+        }
+    </style>
+</head>
+<body>
+    <div>나는  block 요소</div>
+    <span>나는 inline 요소1</span>
+    <span>나는 inline 요소2</span>
+    <!-- inline 요소는 자신의 영역만큼만 차지.
+    block 요소는 자신을 포함한 줄 전체를 차지. -->
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .parants{
+            background-color: blue;
+            width:600px;
+            height:400px;
+            margin:100px auto;
+            padding: 0%;
+            position: relative;
+            
+        }
+        .childRtop{
+            width:200px;
+            height:100px;
+            top: 0;
+            left: 0;
+            background-color: red;
+            position: absolute;
+            
+        }
+        .childLtop{
+            position: absolute;
+            width:200px;
+            height:100px;
+            top: 0;
+            right: 0;
+            background-color: red;
+            position: absolute;
+
+        }
+        .childRbot{
+            width:200px;
+            height:100px;
+            bottom: 0;
+            right: 0;
+            background-color: red;
+            position: absolute;
+        }
+        .childLbot{
+            width:200px;
+            height:100px;
+            bottom: 0;
+            left: 0;
+            background-color: red;
+            position: absolute;
+        }
+        .childOutR{
+            width:200px;
+            height:100px;
+            bottom: 50%;
+            right: 100%;
+            background-color: red;
+            transform: translate(0%, 50%);
+            position: absolute;
+        }
+        .childOutL{
+            width:200px;
+            height:100px;
+            bottom: 50%;
+            left: 100%;
+            background-color: red;
+            transform: translate(0%, 50%);
+            position: absolute;
+        }
+        .childCenter{
+            width:200px;
+            height:100px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: red;
+            position: absolute;
+        }
+        .childOutT{
+            width:200px;
+            height:100px;
+            bottom: 100%;
+            left: 50%;
+            background-color: red;
+            transform: translate(-50%, 0%);
+            position: absolute;
+        }
+        .childOutB{
+            width:200px;
+            height:100px;
+            top: 100%;
+            left: 50%;
+            background-color: red;
+            transform: translate(-50%, 0%);
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="parants">
+        <div class="childRtop"></div>
+        <div class="childLtop"></div>
+        <div class="childRbot"></div>
+        <div class="childLbot"></div>
+        <div class="childCenter"></div>
+        <div class="childOutR"></div>
+        <div class="childOutL"></div>
+        <div class="childOutT"></div>
+        <div class="childOutB"></div>
+    </div>
+</body>
+</html>

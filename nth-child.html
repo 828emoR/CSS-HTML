@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth-child()</title>
+    <style>
+        .box{
+            border: 3px solid #000;
+            text-align: center;
+        }
+        /* .클래스명 띄우고 선택자 실행시 아래 포함된 영역 전부 선택 */
+        .box div{ 
+            border: 3px solid orange;
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+        }
+        .box div:nth-child(odd){
+            background-color: skyblue;
+        }
+        .box div:nth-child(even){
+            background-color: coral;
+        }
+        /* .box div:nth-of-type(3){
+            background-color: blue;
+        }
+        .box div:nth-of-type(4){
+            background-color: cornflowerblue;
+        } */
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>headLine</h2>
+        <div>할라우</div>
+        <div></div>
+        <div></div>
+        <div>해위</div>
+    </div>
+</body>
+</html>

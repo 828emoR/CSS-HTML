@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소 before after</title>
+    <style>
+        .gnb{
+            color: #222;
+            display: flex;
+            /* border: solid red 1px; */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+
+        }
+        a{
+            text-decoration: none;
+            color: #222;
+        }
+        .gnb a::before{
+            content: '01';
+            background-color: blue;
+            color: #fff;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            text-align: center;
+            line-height: 20px;
+            border-radius: 50%;
+            font-size: 12px;
+            margin-right: 3px;
+
+        }
+        .gnb a::after{
+            content: 'update';
+            background-color: red;
+            color: #fff;
+            width: 44px;
+            height: 22px;
+            display: inline-block;
+            text-align: center;
+            line-height: 20px;
+            border-radius: 10%;
+            font-size: 12px;
+            margin-left: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="gnb">
+        <a href="#none">Busan Polytech Software</a>
+    </div>
+</body>
+</html>

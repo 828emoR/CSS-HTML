@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션</title>
+</head>
+<body>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: orangered;
+            animation-name: box-ani;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            /* animation-delay: 2s; */
+            animation-timing-function: linear;
+            /* animation-fill-mode: forwards; */
+
+        }
+        @keyframes box-ani{
+            /* from{
+                margin-left: 0;
+            }
+            to{
+                margin-left: 300px;
+            } */
+            0%{
+                margin-top: 0;
+                margin-left: 0;
+            }
+            50%{
+                margin-top: 0;
+                margin-left: 300px;
+            }
+            100%{
+                margin-top: 200px; margin-left: 300px;
+            }
+
+        }
+    </style>
+</body>
+<div class="box"></div>
+</html>
